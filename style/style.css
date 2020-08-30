@@ -1,0 +1,94 @@
+html,body{
+margin: 0;
+padding: 0;
+}
+.image{
+    height: 85vh;
+    width: auto;
+    background-color:#800000;
+}
+hr.new5 {
+    border: 2px dotted #800000;
+    width: 20%;
+  }
+.img{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    border: 2px #65da06 solid;
+    border-radius:20% 0 ;
+}
+.content {
+    padding:130px 15px;
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+}
+.content h1{
+    margin-bottom: -30px;
+}
+.wabutton a{
+    position: absolute;
+    left: 5%;
+    top: 60%;
+ 
+}
+.wbutton a{
+    padding: 15px 35px;
+    font-size: 20px;
+    color: black;
+    background-color: transparent;
+    text-decoration:none;
+    padding: 15px 35px;
+}
+/* Begin Media Queries*/
+
+@media screen and (max-width: 569px) {
+
+    .image{
+        height: 80vh;
+        width: auto;
+        background-color:#800000;
+    }
+    .img{
+        position : absolute;
+        top: 20px;
+        left: 75px;
+        height: 250px;
+        width: 250px;
+    }
+    .content {
+        font-size: 40px;
+        position: relative;
+        left: 70%;
+        top: 60%;
+        transform: translate(-60%,-50%);
+    }
+    .wabutton{
+            position: absolute;
+            left: 35%;
+            top: 57%;
+    }
+
+}
+
+@media screen and (max-width: 319px) {
+
+    .image{
+        height: 80vh;
+        width: auto;
+    }
+    .content {
+        font-size: 36px;
+        position: relative;
+        left: 70%;
+        top: 50%;
+        transform: translate(-60%,-50%);
+    }
+    .wabutton{
+        position: relative;
+        top: -50px;
+    }
+}
