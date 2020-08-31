@@ -5,11 +5,14 @@ padding: 0;
 .image{
     height: auto;
     width: auto;
-    background-color:#800000;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.3)),url('/backhgrounnd.jpg');
+    /* background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.3))linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.3)), url('/backhgrounnd.jpg'); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 hr.new5 {
-    border: 2px dotted #800000;
-    width: 20%;
+    border: 3px thick #65da06;
+    width: 10%;
 }
 .img{
     width: 250px;
@@ -21,7 +24,7 @@ hr.new5 {
     border-radius:20% 0 ;
 }
 .content {
-    padding:130px 15px;
+    padding:90px 15px;
     color: white;
     font-size: 70px;
     font-weight: 700;
@@ -29,15 +32,20 @@ hr.new5 {
 .content h1{
     margin-bottom: -30px;
 }
-.whatsapp{
-    height: 80px;
-    width: 80px;
+.wbtn{
+    position: absolute;
+    left: 5%;
+    top: 40%;
+    font-size: 25px;
+    font-weight: 700;
 }
-.whatsapp:hover{
-    height: 110px;
-    width: 110px;
-    transition: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+.wb{
+    position: absolute;
+    top: 43%;
+    left: 5%;
 }
+
+
 .wabutton a{
     position: absolute;
     left: 2%;
@@ -59,7 +67,9 @@ hr.new5 {
     .image{
         height: 80vh;
         width: auto;
-        background-color:#800000;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.5)),url('/backhgrounnd.jpg'); background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.3)),url('/backhgrounnd.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
     }
     .img{
         position : absolute;
@@ -82,7 +92,11 @@ hr.new5 {
     }
     .second{
         position: absolute;
-        top: 120%;
+        top: 95%;
+    }
+    .wb{
+        top: 83%;
+        left: 25%;
     }
 
 }
