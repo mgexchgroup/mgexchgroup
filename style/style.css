@@ -62,7 +62,7 @@ hr.new5 {
 }
 /* Begin Media Queries*/
 
-@media screen and (max-width: 569px) {
+@media screen and (max-width: 1040px) {
 
     .image{
         height: 80vh;
