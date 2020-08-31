@@ -10,10 +10,10 @@ padding: 0;
 hr.new5 {
     border: 2px dotted #800000;
     width: 20%;
-  }
+}
 .img{
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
     position: absolute;
     top: 15%;
     right: 15%;
@@ -29,19 +29,28 @@ hr.new5 {
 .content h1{
     margin-bottom: -30px;
 }
+.whatsapp{
+    height: 80px;
+    width: 80px;
+}
+.whatsapp:hover{
+    height: 110px;
+    width: 110px;
+    transition: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
 .wabutton a{
     position: absolute;
-    left: 5%;
-    top: 45%;
+    left: 2%;
+    top: 48%;
  
 }
-.wbutton a{
-    padding: 15px 35px;
-    font-size: 20px;
-    color: black;
-    background-color: transparent;
-    text-decoration:none;
-    padding: 15px 35px;
+.wbutton{
+    height: 100px;
+    width: 100px;
+}
+.wbutton:hover{
+    height: 120px;
+    width: 120px;
 }
 /* Begin Media Queries*/
 
