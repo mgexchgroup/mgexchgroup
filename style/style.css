@@ -3,9 +3,9 @@ margin: 0;
 padding: 0;
 }
 .image{
-    height: auto;
+    height: 80vh;
     width: auto;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.3)),url('/backhgrounnd.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.8)),url('/backhgrounnd.jpg');
     /* background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.3))linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.3)), url('/backhgrounnd.jpg'); */
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -32,42 +32,124 @@ hr.new5 {
 .content h1{
     margin-bottom: -30px;
 }
-.wbtn{
-    position: absolute;
-    left: 5%;
-    top: 40%;
-    font-size: 25px;
-    font-weight: 700;
-}
+
 .wb{
     position: absolute;
     top: 43%;
     left: 5%;
 }
-
-
-.wabutton a{
-    position: absolute;
-    left: 2%;
-    top: 48%;
- 
-}
+.wb button {
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 60px;
+    width: 210px;
+    opacity: 1;
+    background-color: #ffffff;
+    border: 1px solid rgba(22, 76, 167, 0.6);
+  }
+.wb  button span {
+    color: #164ca7;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+  }
+ .wb button:hover {
+    animation: rotate 0.7s ease-in-out both;
+    text-decoration: none;
+  }
+.wb  button:hover span {
+    animation: storm 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+    text-decoration: none;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+    25% {
+      transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+    50% {
+      transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+    75% {
+      transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+    100% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+  }
+  @keyframes storm {
+    0% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+    25% {
+      transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+    50% {
+      transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+    75% {
+      transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+  }
+  
 .wbutton{
     height: 100px;
     width: 100px;
+    transition: 0.70s;
+    -webkit-transition: 0.70s;
+    -moz-transition: 0.70s;
+    -ms-transition: 0.70s;
+    -o-transition: 0.70s;
 }
 .wbutton:hover{
-    height: 120px;
-    width: 120px;
+    transition: 0.70s;
+    -webkit-transition: 0.70s;
+    -moz-transition: 0.70s;
+    -ms-transition: 0.70s;
+    -o-transition: 0.70s;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 /* Begin Media Queries*/
+.wfixed{
+    position: fixed;
+    bottom: -10px;
+    right:-15px;
+    /* height: 50px;
+    width: 50px; */
+    z-index: 99;
+    -webkit-transform: scale(0.4);
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-duration: 500ms;
+}
+.wfixed:hover {
+    -webkit-transform: scale(0.6);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 500ms;
+  } 
 
 @media screen and (max-width: 1040px) {
 
     .image{
         height: 80vh;
         width: auto;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.5)),url('/backhgrounnd.jpg'); background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.3)),url('/backhgrounnd.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.7)),url('/backhgrounnd.jpg');
         background-repeat: no-repeat;
         background-size: 100% 100%;
     }
